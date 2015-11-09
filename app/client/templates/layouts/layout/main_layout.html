@@ -1,0 +1,22 @@
+<template name="Layout">
+    <div id="particles-js">
+
+    </div>
+    {{> sAlert}}
+    {{> NavBar}}
+    <div class="container ">
+
+        <div class="row">
+            <div class="col-md-12">
+
+                {{> yield}}
+            </div>
+        </div>
+        <footer class="container">
+            <div class="footer-well">
+                {{_ "brand"}} &copy;2015
+            </div>
+        </footer>
+    </div>
+
+</template>
