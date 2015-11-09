@@ -26,6 +26,10 @@ mrt:accounts-vk
 cfs:standard-packages
 cfs:gridfs
 reywood:publish-composite
+aslagle:reactive-table
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
 
 #UI
 ian:accounts-ui-bootstrap-3
