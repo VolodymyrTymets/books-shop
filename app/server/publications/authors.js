@@ -1,7 +1,8 @@
 Meteor.publish("authors", function(filter,options) {
     return Authors.find(filter, options);
 });
-ReactiveTable.publish("authors", Authors);
+
+ReactiveTable.publish('authors', Authors);
 
 Meteor.publishComposite('singleAuthor', function (authorId) {
     return {

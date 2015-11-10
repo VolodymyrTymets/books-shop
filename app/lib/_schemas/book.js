@@ -13,7 +13,10 @@ Schemas.Book = new SimpleSchema({
         max: 50
     },
     description: {
-        type: String
+        type: String,
+        autoform: {
+            type: "textarea"
+        }
     },
     years:{
         type: Date
@@ -21,15 +24,20 @@ Schemas.Book = new SimpleSchema({
     authorsId:{
         type: [String],
         autoform: {
-            type: "hidden",
-            label: false
+            type: "select-multiple"
         }
     },
     categoriesId:{
-        type: [String],
+        type: [String]
+
+    },
+    fotoId:{
+        type: String,
         autoform: {
-            type: "hidden",
-            label: false
+            afFieldInput: {
+                type: 'fileUpload',
+                collection: 'Images'
+            }
         }
     }
 });

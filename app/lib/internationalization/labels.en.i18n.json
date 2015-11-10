@@ -1,6 +1,11 @@
 {
   "brand": "Books Shop",
+  "submit":"Submit",
+  "new":"new",
+  "add":"add",
+  "or":"or",
 
+  "category":"Category",
   "category_name":"Name",
 
   "book":"Book",
