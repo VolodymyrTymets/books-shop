@@ -1,0 +1,5 @@
+<template name="AuthorsRowAction">
+    <a  href="{{pathFor 'author' _id=this._id}}"  class="mdi-action-visibility"></a>
+    <a  href="{{pathFor 'author/edit' _id=this._id}}"  class="mdi-content-create"></a>
+    <a  data-action="remove-author"   class="mdi-action-delete"></a>
+</template>

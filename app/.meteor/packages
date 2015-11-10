@@ -31,11 +31,13 @@ aldeed:simple-schema
 aldeed:collection2
 aldeed:autoform
 
+
 #UI
 ian:accounts-ui-bootstrap-3
 utilities:avatar
 juliancwirko:s-alert
 juliancwirko:s-alert-bouncyflip
+yogiben:autoform-file
 
 #INTERNATIONALIZATION
 tap:i18n

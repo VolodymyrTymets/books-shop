@@ -17,6 +17,18 @@ Schemas.Author = new SimpleSchema({
         max: 50
     },
     biography:{
-        type: String
+        type: String,
+        autoform: {
+            type: "textarea"
+        }
+    },
+    fotoId:{
+        type: String,
+        autoform: {
+            afFieldInput: {
+                type: 'fileUpload',
+                collection: 'Images'
+            }
+        }
     }
 });
