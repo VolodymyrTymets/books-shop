@@ -73,6 +73,7 @@ jparker:crypto-core@0.1.0
 jparker:crypto-md5@0.1.1
 jparker:gravatar@0.3.1
 jquery@1.11.4
+jss:path@0.0.3
 juliancwirko:s-alert@3.1.2
 juliancwirko:s-alert-bouncyflip@3.1.2
 launch-screen@1.0.4
@@ -100,6 +101,10 @@ oauth@1.1.6
 oauth2@1.1.5
 observe-sequence@1.0.7
 ordered-dict@1.0.4
+ostrio:meteor-root@1.0.2
+peerlibrary:assert@0.2.5
+peerlibrary:blocking@0.5.2
+peerlibrary:fs@0.1.7
 promise@0.5.1
 raix:eventemitter@0.1.3
 random@1.0.5
