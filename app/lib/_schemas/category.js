@@ -10,7 +10,7 @@ Schemas.Category = new SimpleSchema({
     },
     name: {
         type: String,
-        label: "Title",
+        label: TAPi18n.__('category_name'),
         max: 200
     }
 });

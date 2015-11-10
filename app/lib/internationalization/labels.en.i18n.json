@@ -1,3 +1,24 @@
 {
-  "brand": "Books Shop"
+  "brand": "Books Shop",
+
+  "category_name":"Name",
+
+  "book":"Book",
+  "books":"Books",
+  "book_title":"Title",
+  "book_description":"Description",
+  "book_years":"Year",
+
+  "author":"Author",
+  "authors":"Authors",
+  "author_name":"Name",
+  "author_surname":"Surname",
+  "author_biography":"Biography",
+
+  "order":"Order",
+  "order_address":"Address",
+  "order_dateOf":"DateOf",
+  "order_typeOfDelivery":"Type of Delivery",
+  "order_user":"User",
+  "order_book":"Book"
 }
