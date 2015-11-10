@@ -12,4 +12,5 @@ Books.allow({
     }
 });
 
+Schemas.Book.i18n("schemas.book");
 Books.attachSchema(Schemas.Book);

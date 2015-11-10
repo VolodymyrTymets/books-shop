@@ -10,16 +10,13 @@ Schemas.Author = new SimpleSchema({
     },
     name: {
         type: String,
-        label: TAPi18n.__('author_name'),
         max: 50
     },
     surname: {
         type: String,
-        label:TAPi18n.__('author_surname'),
         max: 50
     },
     biography:{
-        type: String,
-        label: TAPi18n.__('author_biography')
+        type: String
     }
 });

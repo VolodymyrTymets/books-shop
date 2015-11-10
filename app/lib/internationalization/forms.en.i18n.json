@@ -1,0 +1,60 @@
+{
+  "schemas": {
+    "category": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter a name for your category"
+      }
+    },
+    "author": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter a name for  author"
+      },
+      "surname": {
+        "label": "Surname",
+        "placeholder": "Enter a surname for  author"
+      },
+      "biography": {
+        "label": "Biography",
+        "placeholder": "Enter a biography here"
+      }
+    },
+    "order": {
+      "address": {
+        "label": "Address",
+        "placeholder": "Enter a address here"
+      },
+      "dateOf": {
+        "label": "Date Of",
+        "placeholder": "Enter a Date of here"
+      },
+      "typeOfDelivery": {
+        "label": "Type of delivery",
+        "placeholder": "Enter a Type of delivery  here"
+      },
+      "userId": {
+        "label": "User",
+        "placeholder": "Enter a bookId  here"
+      },
+      "bookId": {
+        "label": "Book",
+        "placeholder": "Enter a book  here"
+      }
+    },
+    "book": {
+      "title": {
+        "label": "Title",
+        "placeholder": "Enter a Title here"
+      },
+      "description": {
+        "label": "description",
+        "placeholder": "Enter a description of here"
+      },
+      "years": {
+        "label": "Years",
+        "placeholder": "Enter a years  here"
+      }
+    }
+  }
+}

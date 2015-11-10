@@ -1,4 +1,4 @@
-Schemas.Author = new SimpleSchema({
+Schemas.Book = new SimpleSchema({
     _id: {
         type: String,
         max: 17,
@@ -10,16 +10,13 @@ Schemas.Author = new SimpleSchema({
     },
     title: {
         type: String,
-        label: TAPi18n.__('book_title'),
         max: 50
     },
     description: {
-        type: String,
-        label:  TAPi18n.__('book_description')
+        type: String
     },
     years:{
-        type: Date,
-        label:  TAPi18n.__('book_years')
+        type: Date
     },
     authorsId:{
         type: [String],

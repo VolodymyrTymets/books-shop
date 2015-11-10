@@ -12,4 +12,5 @@ Authors.allow({
     }
 });
 
+Schemas.Author.i18n("schemas.author");
 Authors.attachSchema(Schemas.Author);

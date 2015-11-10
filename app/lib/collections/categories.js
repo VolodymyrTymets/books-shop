@@ -12,4 +12,5 @@ Categories.allow({
     }
 });
 
+Schemas.Category.i18n("schemas.category");
 Categories.attachSchema(Schemas.Category);

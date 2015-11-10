@@ -39,6 +39,7 @@ juliancwirko:s-alert-bouncyflip
 
 #INTERNATIONALIZATION
 tap:i18n
+gwendall:autoform-i18n
 
 #STYLE
 fezvrasta:bootstrap-material-design

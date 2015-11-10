@@ -10,24 +10,19 @@ Schemas.Order = new SimpleSchema({
     },
     address: {
         type: String,
-        label: TAPi18n.__('order_address'),
         max: 50
     },
     dateOf:{
         type: Date,
-        label: TAPi18n.__('order_dateOf'),
         max: 50
     },
     typeOfDelivery:{
-        type: String,
-        label: TAPi18n.__('order_typeOfDelivery')
+        type: String
     },
     userId:{
-        type: String,
-        label: TAPi18n.__('order_user')
+        type: String
     },
     bookId:{
-        type: String,
-        label: TAPi18n.__('order_book')
+        type: String
     }
 });

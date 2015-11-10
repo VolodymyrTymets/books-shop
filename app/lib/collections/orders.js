@@ -12,5 +12,6 @@ Orders.allow({
     }
 });
 
+Schemas.Order.i18n("schemas.order");
 Orders.attachSchema(Schemas.Order);
 
