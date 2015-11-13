@@ -1,6 +1,7 @@
 Router.route('author',{
     path:'/author/:_id',
     template:'Author',
+    controller:BaseController,
     //controller:Authorized,
     //onBeforeAction: function () {
     //    if (!Admin())

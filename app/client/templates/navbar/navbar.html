@@ -11,6 +11,9 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
+                {{#each categories}}
+                    <li><a href="{{pathFor 'categoryBooks' _categoryId=this._id}}">{{name}}</a></li>
+                {{/each}}
                 <li><a href="{{pathFor 'categoriesList'}}">C</a></li>
                 <li><a href="{{pathFor 'authorsList'}}">A</a></li>
                 <li><a href="{{pathFor 'booksList'}}">B</a></li>

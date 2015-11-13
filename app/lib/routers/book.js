@@ -1,7 +1,7 @@
 Router.route('book',{
     path:'/book/:_id',
     template:'Book',
-    //controller:Authorized,
+    controller:BaseController,
     //onBeforeAction: function () {
     //    if (!Admin())
     //        this.next();

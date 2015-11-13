@@ -1,3 +1,9 @@
+Template.NavBar.helpers({
+    'categories': function(){
+        return Categories.find();
+    }
+});
+
 Template.NavBar.events({
     'click a[data-action="change-language"]': function(e,tmp){
         //TAPi18n.setLanguage(e.target.attributes['data-name'].nodeValue);
