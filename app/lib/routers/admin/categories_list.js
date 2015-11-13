@@ -1,6 +1,6 @@
-Router.route('categories',{
-    path:'/categories',
-    template:'Categories'
+Router.route('categoriesList',{
+    path:'/categories-list',
+    template:'CategoriesList'
     //controller:Authorized,
     //onBeforeAction: function () {
     //    if (!Admin())

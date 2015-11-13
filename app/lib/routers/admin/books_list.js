@@ -1,6 +1,6 @@
-Router.route('books',{
-    path:'/books',
-    template:'Books',
+Router.route('booksList',{
+    path:'/books-list',
+    template:'BooksList',
     //controller:Authorized,
     //onBeforeAction: function () {
     //    if (!Admin())

@@ -1,12 +1,12 @@
-<template name="Books">
+<template name="BooksList">
   {{# autoForm collection="Books" id="book-insert" type="insert"}}
       <fieldset>
           <legend>{{_ 'book'}}</legend>
           {{> afQuickField name='title'}}
           {{> afQuickField name='description'}}
           {{> afFormGroup name="years"}}
-          {{> afFormGroup name="categoriesId" options=categoriesOpt}} <a href="{{pathFor 'categories'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'category'}}</a>
-          {{> afFormGroup name="authorsId" options=authorsOpt}} <a href="{{pathFor 'categories'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'author'}}</a>
+          {{> afFormGroup name="categoriesId" options=categoriesOpt}} <a href="{{pathFor 'categoriesList'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'category'}}</a>
+          {{> afFormGroup name="authorsId" options=authorsOpt}} <a href="{{pathFor 'categoriesList'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'author'}}</a>
           {{> afQuickField name='photoId'}}
           <button type="submit" class="btn btn-primary">{{_ 'submit'}}</button>
       </fieldset>

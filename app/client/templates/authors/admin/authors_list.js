@@ -1,4 +1,4 @@
-Template.Authors.helpers({
+Template.AuthorsList.helpers({
     'settings':function () {
         return {
             collection: 'authors',

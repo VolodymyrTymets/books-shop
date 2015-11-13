@@ -1,4 +1,4 @@
-Template.Books.helpers({
+Template.BooksList.helpers({
     'settings':function () {
         return {
             collection: 'books',

@@ -1,6 +1,6 @@
-Router.route('authors',{
-    path:'/authors',
-    template:'Authors'
+Router.route('authorsList',{
+    path:'/authors-list',
+    template:'AuthorsList'
     //controller:Authorized,
     //onBeforeAction: function () {
     //    if (!Admin())

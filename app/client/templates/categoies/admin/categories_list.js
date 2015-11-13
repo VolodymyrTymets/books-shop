@@ -1,4 +1,4 @@
-Template.Categories.helpers({
+Template.CategoriesList.helpers({
     'settings':function () {
         return {
             collection: 'categories',
