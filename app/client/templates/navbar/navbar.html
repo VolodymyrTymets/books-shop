@@ -15,7 +15,9 @@
                 <li><a href="{{pathFor 'authorsList'}}">A</a></li>
                 <li><a href="{{pathFor 'booksList'}}">B</a></li>
             </ul>
-
+            <form class="navbar-form navbar-left" id="search-form">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form>
             <ul class="nav navbar-nav navbar-right">
                 {{> loginButtons}} <!-- here -->
             </ul>

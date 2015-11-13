@@ -1,4 +1,10 @@
 Books = new Mongo.Collection('books');
+if(Meteor.isServer) {
+    Books._ensureIndex({
+        'title': 'text',
+        'description': 'text'
+    });
+}
 
 Books.allow({
     insert: function () {
