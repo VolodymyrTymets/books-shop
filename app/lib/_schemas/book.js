@@ -31,7 +31,7 @@ Schemas.Book = new SimpleSchema({
         type: [String]
 
     },
-    fotoId:{
+    photoId:{
         type: String,
         autoform: {
             afFieldInput: {

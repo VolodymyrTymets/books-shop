@@ -13,7 +13,7 @@ Meteor.publishComposite('singleAuthor', function (authorId) {
         children: [
             {
                     find: function (author) {
-                        return Images.find({_id: author.fotoId});
+                        return Images.find({_id: author.photoId});
                     }
             }
         ]

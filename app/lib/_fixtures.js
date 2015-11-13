@@ -1,7 +1,6 @@
 var fillCollection, getAssets, logAction;
 
 getAssets = function(assetsDir) {
-    debugger
     var assetsPath, files, fullPath;
     assetsPath = path.join(Meteor.rootPath, 'assets','app');
     fullPath = path.join(assetsPath, assetsDir);
@@ -40,7 +39,6 @@ logAction = function(assetsNumber, collectionName) {
 };
 
 Meteor.startup(function() {
-    debugger
     var fixturesConfigs, fixturesPath;
     if (!Meteor.isServer) {
         return;
@@ -50,7 +48,6 @@ Meteor.startup(function() {
     fixturesConfigs = EJSON.parse(Assets.getText(fixturesConfigs));
     _.each(fixturesConfigs, function(assetsDir, collectionName) {
         var assets, collection;
-        debugger
         collection = _.get(this, collectionName);
 
         if (collection.find().count()) {

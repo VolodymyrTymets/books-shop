@@ -2,5 +2,5 @@
    Book
     {{title}}
     {{#markdown}}{{description}}{{/markdown}}
-    <img src="{{image.url store='images'}}">
+    <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
 </template>

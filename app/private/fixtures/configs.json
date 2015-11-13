@@ -1,3 +1,5 @@
 {
-  "Categories": "categories"
+  "Categories": "categories",
+  "Authors": "authors",
+  "Books": "books"
 }

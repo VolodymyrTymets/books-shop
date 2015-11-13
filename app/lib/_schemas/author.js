@@ -22,7 +22,7 @@ Schemas.Author = new SimpleSchema({
             type: "textarea"
         }
     },
-    fotoId:{
+    photoId:{
         type: String,
         autoform: {
             afFieldInput: {
