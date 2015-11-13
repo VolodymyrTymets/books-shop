@@ -21,8 +21,6 @@ underscore
 iron:router
 ejson
 markdown
-accounts-password
-mrt:accounts-vk
 cfs:standard-packages
 cfs:gridfs
 reywood:publish-composite
@@ -36,6 +34,9 @@ jss:path
 ostrio:meteor-root
 peerlibrary:fs
 
+#Aurhorization
+accounts-password
+mrt:accounts-vk
 
 #UI
 ian:accounts-ui-bootstrap-3
