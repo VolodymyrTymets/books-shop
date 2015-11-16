@@ -1,13 +1,7 @@
 Router.route('book/edit',{
     path:'/book/edit/:_id',
     template:'BookEdit',
-    //controller:Authorized,
-    //onBeforeAction: function () {
-    //    if (!Admin())
-    //        this.next();
-    //    else
-    //        this.render('AccessForbidden');
-    //},
+    controller:AdminController,
     waitOn:function () {
         return [
             Meteor.subscribe('authors',{}),

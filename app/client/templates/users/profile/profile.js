@@ -24,6 +24,9 @@ Template._loginButtonsAdditionalLoggedInDropdownActions.helpers({
     'userAddress': function () {
         $('[data-name="delivery-type"]').val(Meteor.user().profile.deliveryType)
         return Meteor.user().profile.deliveryAddress;
+    },
+    'admin': function(){
+        return AdminPermission();
     }
 });
 Template._loginButtonsAdditionalLoggedInDropdownActions.events({

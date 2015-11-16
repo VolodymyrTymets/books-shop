@@ -1,7 +1,7 @@
 Router.route('cart',{
     path:'/cart/',
     template:'Cart',
-    controller:BaseController,
+    controller:AuthorizedController,
     waitOn:function () {
         var subs = [];
         Cart.find().forEach(function (cartItem) {
