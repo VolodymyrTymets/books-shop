@@ -1,0 +1,6 @@
+<template name="CartItem">
+    <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+  {{title}}
+  {{#markdown}}{{description}}{{/markdown}}
+    <button class="btn btn-default" data-action="remove-from-cart" >{{_ 'remove'}} </button>
+</template>

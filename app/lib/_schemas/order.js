@@ -8,15 +8,15 @@ Schemas.Order = new SimpleSchema({
         },
         optional:true
     },
-    address: {
+    deliveryAddress: {
         type: String,
         max: 50
     },
-    dateOf:{
+    createdOn:{
         type: Date,
         max: 50
     },
-    typeOfDelivery:{
+    deliveryType:{
         type: String
     },
     userId:{
@@ -24,5 +24,8 @@ Schemas.Order = new SimpleSchema({
     },
     bookId:{
         type: String
+    },
+    active:{
+        type: Boolean
     }
 });

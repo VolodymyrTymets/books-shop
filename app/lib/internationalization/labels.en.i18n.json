@@ -1,9 +1,13 @@
 {
   "brand": "Books Shop",
   "submit":"Submit",
+  "remove":"Remove",
   "new":"new",
   "add":"add",
   "or":"or",
+  "by":"By",
+  "is_active":"Is active",
+  "user":"User",
 
   "category":"Category",
   "category_name":"Name",
@@ -27,11 +31,13 @@
   "order_user":"User",
   "order_book":"Book",
 
-  "user_address":"Address",
-
   "delivery_data":"Delivery Data",
+  "delivery_address":"Delivery Address",
   "delivery_type":"Delivery Type",
   "delivery_type_np":"Nova Poshta",
-  "delivery_type_up":"Ukr Poshta"
+  "delivery_type_up":"Ukr Poshta",
+
+  "cart":"Cart",
+  "add_to_cart":"Add To Cart"
 
 }

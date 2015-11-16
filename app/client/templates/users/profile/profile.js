@@ -17,6 +17,13 @@ Template._loginButtonsAdditionalLoggedInDropdownActions.helpers({
                 text:TAPi18n.__('delivery_type_up')
             }
         ];
+    },
+    'baysCount':function () {
+        return Cart.find().count();
+    },
+    'userAddress': function () {
+        $('[data-name="delivery-type"]').val(Meteor.user().profile.deliveryType)
+        return Meteor.user().profile.deliveryAddress;
     }
 });
 Template._loginButtonsAdditionalLoggedInDropdownActions.events({

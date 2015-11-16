@@ -1,3 +1,7 @@
 {
-
+  "added_to_cart":"Added to art",
+  "already_in_cart":"Already in cart",
+  "removed_from_cart":"Removed from cart",
+  "by_success":"By Success",
+  "cart_empty":"Cart is empty"
 }

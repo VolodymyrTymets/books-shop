@@ -1,4 +1,6 @@
 <template name="BookItem">
+    <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
     {{title}}
     {{#markdown}}{{description}}{{/markdown}}
+    <button class="btn btn-default" data-action="add-to-cart" >{{_ 'add_to_cart'}} </button>
 </template>

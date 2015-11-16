@@ -1,14 +1,8 @@
-<template name="_loginButtonsAdditionalLoggedInDropdownActions">
+<template name="Cart">
+    {{#each items}}
+        {{> CartItem this}}
+    {{/each}}
 
-    <section class="profile">
-        <div class="profile-header"><img src="http://dir.agosto.nl/dump/sara-header.png" alt=""/></div>
-        <div class="profile-content"><img src="{{photo}}" alt="Portret of Sara Robertson"/>
-            <h1>{{user.profile.name}}</h1>
-        </div>
-        <ul aria-label="Statistics" >
-            <li>{{baysCount}}<a href=" {{pathFor 'cart'}}">{{_ 'cart'}}</a></li>
-        </ul>
-    </section>
     <form>
         <legend>{{_ 'delivery_data'}}</legend>
         <div class="form-group">
@@ -20,13 +14,18 @@
         <div class="form-group">
             <label for="delivery-type"  class="col-lg-2 control-label" >{{_ 'delivery_type'}}</label>
             <div class="col-lg-10">
-                <select class="form-control"  data-name="delivery-type" id="delivery-type">
+                <select class="form-control"  data-name="delivery-type" id="cart-delivery-type">
                     {{#each deliveryTypes}}
-                    <option value="{{value}}">{{text}}</option>
+                        <option value="{{value}}">{{text}}</option>
                     {{/each}}
                 </select>
             </div>
         </div>
     </form>
 
+    <div class="row">
+        <div class="col-md-2">
+            <button data-action="by-now" class="btn btn-primary">{{_ 'by'}}</button>
+        </div>
+    </div>
 </template>
