@@ -25,5 +25,13 @@
   "order_dateOf":"DateOf",
   "order_typeOfDelivery":"Type of Delivery",
   "order_user":"User",
-  "order_book":"Book"
+  "order_book":"Book",
+
+  "user_address":"Address",
+
+  "delivery_data":"Delivery Data",
+  "delivery_type":"Delivery Type",
+  "delivery_type_np":"Nova Poshta",
+  "delivery_type_up":"Ukr Poshta"
+
 }
