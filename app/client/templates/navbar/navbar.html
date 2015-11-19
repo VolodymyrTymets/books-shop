@@ -18,10 +18,11 @@
                     <li><a href="{{pathFor 'categoryBooks' _categoryId=this._id}}">{{name}}</a></li>
                 {{/each}}
             </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" id="cart" data-action="show-cart"><i class="fa fa-shopping-cart"></i> {{_ 'cart'}} <span class="badge">{{baysCount}}    </span></a></li>
-            </ul>
+            {{#if currentUser}}
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="cart" data-action="show-cart"><i class="fa fa-shopping-cart"></i> {{_ 'cart'}} <span class="badge">{{baysCount}}    </span></a></li>
+                </ul>
+            {{/if}}
             <ul class="nav navbar-nav navbar-right">
                 {{> loginButtons}} <!-- here -->
             </ul>

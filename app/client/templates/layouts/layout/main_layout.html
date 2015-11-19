@@ -5,7 +5,9 @@
     {{> sAlert}}
     {{> NavBar}}
     <div class="container ">
-        {{> ModalCart}}
+        {{#if currentUser}}
+            {{> ModalCart}}
+        {{/if}}
         <div class="row">
             <div class="col-md-12">
 
