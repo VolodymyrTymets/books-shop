@@ -5,5 +5,8 @@ Template._loginButtonsAdditionalLoggedInDropdownActions.helpers({
     },
     'user': function () {
         return  Meteor.user();
+    },
+    'admin': function(){
+        return AdminPermission();
     }
 });
