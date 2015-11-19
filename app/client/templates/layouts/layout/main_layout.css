@@ -1,0 +1,12 @@
+body{
+    background-color: #212121;
+}
+.navbar{
+    background-color: #000000 !important ;
+}
+.btn-primary{
+    background-color: #000000 !important ;
+}
+.white-text{
+    color:white;
+}

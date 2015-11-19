@@ -24,5 +24,8 @@ Template.BookItem.events({
             sAlert.warning(TAPi18n.__('already_in_cart'));
         }
 
+    },
+    'click [data-action="open-book"]':function (e,tmp) {
+        Router.go('book',{_id:tmp.data._id});
     }
 });
