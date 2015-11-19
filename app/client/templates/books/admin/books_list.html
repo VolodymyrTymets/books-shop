@@ -5,6 +5,7 @@
           {{> afQuickField name='title'}}
           {{> afQuickField name='description'}}
           {{> afFormGroup name="years"}}
+          {{> afQuickField name='price'}}
           {{> afFormGroup name="categoriesId" options=categoriesOpt}} <a href="{{pathFor 'categoriesList'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'category'}}</a>
           {{> afFormGroup name="authorsId" options=authorsOpt}} <a href="{{pathFor 'categoriesList'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'author'}}</a>
           {{> afQuickField name='photoId'}}

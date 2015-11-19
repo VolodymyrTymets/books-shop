@@ -8,13 +8,13 @@ Images = new FS.Collection("images", {
 });
 Images.allow({
     insert: function () {
-        return AdminPermission();
+        return true;
     },
     update: function () {
-        return AdminPermission();
+        return true;
     },
     remove: function () {
-        return AdminPermission();
+        return true;
     },
     download:function(){
         return true;

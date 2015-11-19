@@ -5,5 +5,6 @@
   "years":"1998-01-01T00:00:00.000Z",
   "categoriesId":["fiction"],
   "authorsId":["coelqo"],
-  "photoId":"alhimicPhoto"
+  "photoId":"alhimicPhoto",
+  "price":25
 }

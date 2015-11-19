@@ -31,6 +31,9 @@ Schemas.Book = new SimpleSchema({
         type: [String]
 
     },
+    price:{
+        type: Number
+    },
     photoId:{
         type: String,
         autoform: {

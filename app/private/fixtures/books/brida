@@ -5,5 +5,6 @@
   "years":"1990-01-01T00:00:00.000Z",
   "categoriesId":["fiction"],
   "authorsId":["coelqo"],
-  "photoId":"bridaFoto"
+  "photoId":"bridaFoto",
+  "price":40
 }
