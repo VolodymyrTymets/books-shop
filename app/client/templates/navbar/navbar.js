@@ -1,6 +1,9 @@
 Template.NavBar.helpers({
     'categories': function(){
         return Categories.find();
+    },
+    'baysCount':function () {
+        return Cart.find().count();
     }
 });
 
@@ -17,5 +20,8 @@ Template.NavBar.events({
         }else{
             Router.go('home')
         }
+    },
+    'click a[data-action="show-cart"]': function(e,tmp){
+            $(".shopping-cart").fadeToggle( "fast");
     }
 });

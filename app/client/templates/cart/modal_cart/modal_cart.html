@@ -1,0 +1,51 @@
+<template name="ModalCart">
+    <div class="shopping-cart" style="display: none">
+
+        <div class="shopping-cart-header">
+            <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">{{baysCount}}</span>
+            <div class="shopping-cart-total">
+                <span class="lighter-text">Total:</span>
+                <span class="main-color-text">$2,229.97</span>
+            </div>
+        </div> <!--end shopping-cart-header -->
+        <div class="row">
+            <div class="clo-md-12">
+                <form class="form-horizontal">
+                    <legend>{{_ 'delivery_data'}}</legend>
+                    <div class="form-group">
+                        <label for="input-address" class="col-lg-2 control-label">{{_ "delivery_address"}}</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" data-name="delivery-address" id="input-address" placeholder="{{_ "delivery_address"}}" value="{{userAddress}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-type"  class="col-lg-2 control-label" >{{_ 'delivery_type'}}</label>
+                        <div class="col-lg-10">
+                            <select class="form-control"  data-name="delivery-type" id="delivery-type">
+                                {{#each deliveryTypes}}
+                                    <option value="{{value}}">{{text}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="clo-md-12">
+                <ul class="shopping-cart-items">
+                    {{#each items}}
+                        <li class="clearfix">
+                            {{> ModalCartItem}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <button data-action="by-now" class="btn btn-primary">{{_ 'by'}}</button>
+            </div>
+        </div>
+    </div>
+</template>

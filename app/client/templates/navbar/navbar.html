@@ -23,6 +23,9 @@
                 <input type="text" class="form-control col-lg-8" placeholder="Search">
             </form>
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="cart" data-action="show-cart"><i class="fa fa-shopping-cart"></i> {{_ 'cart'}} <span class="badge">{{baysCount}}    </span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
                 {{> loginButtons}} <!-- here -->
             </ul>
            <!--
@@ -33,4 +36,5 @@
             -->
         </div>
     </div>
+
 </template>

@@ -131,6 +131,3 @@ section.profile::after {
     font-weight: 300;
     font-size: 0.8em;
 }
-#login-dropdown-list .dropdown-menu {
-    background-color: rgb(47, 54, 62);
-}
