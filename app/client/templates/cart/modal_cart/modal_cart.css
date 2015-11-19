@@ -45,6 +45,9 @@
 .shopping-cart .shopping-cart-items li {
     margin-bottom: 18px;
 }
+.shopping-cart .shopping-cart-items .cart-item{
+    position: relative;
+}
 .shopping-cart .shopping-cart-items img {
     float: left;
     margin-right: 12px;
@@ -59,6 +62,11 @@
 .shopping-cart .shopping-cart-items .item-price {
     color: #6394F8;
     margin-right: 8px;
+}
+.shopping-cart .shopping-cart-items .item-remove {
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 .shopping-cart .shopping-cart-items .item-quantity {
     color: #ABB0BE;

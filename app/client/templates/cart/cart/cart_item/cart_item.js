@@ -12,7 +12,7 @@ Template.CartItem.helpers({
 Template.CartItem.events({
     'click [data-action="remove-from-cart"]':function (e,tmp) {
             Cart.remove({
-                bookId:tmp.data._id
+                bookId:tmp.data.bookId
             });
             sAlert.success(TAPi18n.__('removed_from_cart'));
     }
