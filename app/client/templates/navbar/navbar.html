@@ -10,18 +10,15 @@
             </button>
         </div>
         <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-left" id="search-form">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form>
             <ul class="nav navbar-nav">
                 {{#each categories}}
                     <li><a href="{{pathFor 'categoryBooks' _categoryId=this._id}}">{{name}}</a></li>
                 {{/each}}
-                <li><a href="{{pathFor 'categoriesList'}}">C</a></li>
-                <li><a href="{{pathFor 'authorsList'}}">A</a></li>
-                <li><a href="{{pathFor 'booksList'}}">B</a></li>
-                <li><a href="{{pathFor 'orderList'}}">O</a></li>
             </ul>
-            <form class="navbar-form navbar-left" id="search-form">
-                <input type="text" class="form-control col-lg-8" placeholder="Search">
-            </form>
+
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" id="cart" data-action="show-cart"><i class="fa fa-shopping-cart"></i> {{_ 'cart'}} <span class="badge">{{baysCount}}    </span></a></li>
             </ul>

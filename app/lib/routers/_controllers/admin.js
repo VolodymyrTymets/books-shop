@@ -1,6 +1,6 @@
-AuthorizedController = RouteController.extend({
+AdminController = AuthorizedController.extend({
     onBeforeAction: function () {
-        if (Meteor.user())
+        if (AdminPermission())
             this.next();
         else
             this.render('AccessForbidden');

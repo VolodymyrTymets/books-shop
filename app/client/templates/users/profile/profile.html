@@ -1,11 +1,15 @@
 <template name="_loginButtonsAdditionalLoggedInDropdownActions">
-
+{{#if admin}}
+  <a class="btn btn-block btn-info" href="{{pathFor 'categoriesList'}}">{{_ 'categories'}}</a>
+  <a class="btn btn-block btn-info" href="{{pathFor 'authorsList'}}">{{_ 'authors'}}</a>
+  <a class="btn btn-block btn-info" href="{{pathFor 'booksList'}}">{{_ 'books'}}</a>
+  <a class="btn btn-block btn-info" href="{{pathFor 'orderList'}}">{{_ 'orders'}}</a>
+{{else}}
     <section class="profile">
         <div class="profile-header"><img src="http://dir.agosto.nl/dump/sara-header.png" alt=""/></div>
         <div class="profile-content"><img src="{{photo}}" alt="Portret of Sara Robertson"/>
             <h1>{{user.profile.name}}</h1>
         </div>
-    </section>
-
-
+    </section>   
+{{/if}}
 </template>

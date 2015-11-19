@@ -1,5 +1,6 @@
 {
   "Categories": "categories",
   "Authors": "authors",
-  "Books": "books"
+  "Books": "books",
+  "Meteor.users":"users"
 }

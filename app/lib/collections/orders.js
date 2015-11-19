@@ -5,10 +5,10 @@ Orders.allow({
         return true;
     },
     update: function () {
-        return true;
+        return AdminPermission();
     },
     remove: function () {
-        return true;
+        return AdminPermission();
     }
 });
 

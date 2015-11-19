@@ -2,13 +2,13 @@ Categories = new Mongo.Collection('categories');
 
 Categories.allow({
     insert: function () {
-        return true;
+        return AdminPermission();
     },
     update: function () {
-        return true;
+        return AdminPermission();
     },
     remove: function () {
-        return true;
+        return AdminPermission();
     }
 });
 
