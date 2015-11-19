@@ -1,4 +1,6 @@
 <template name="AuthorsList">
-  {{> quickForm collection="Authors" id="author-insert" type="insert"}}
-  {{> reactiveTable settings=settings}}
+    <div class="well">
+        {{> quickForm collection="Authors" id="author-insert" type="insert"}}
+        {{> reactiveTable settings=settings}}
+    </div>
 </template>

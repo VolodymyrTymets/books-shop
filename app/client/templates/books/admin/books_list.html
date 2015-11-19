@@ -1,5 +1,6 @@
 <template name="BooksList">
-  {{# autoForm collection="Books" id="book-insert" type="insert"}}
+  <div class="well">
+  {{# autoForm collection="Books" id="book-insert" type="insert" }}
       <fieldset>
           <legend>{{_ 'book'}}</legend>
           {{> afQuickField name='title'}}
@@ -13,4 +14,5 @@
   {{/autoForm}}
 
   {{> reactiveTable settings=settings}}
+  </div>
 </template>

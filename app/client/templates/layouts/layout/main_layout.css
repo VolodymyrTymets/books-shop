@@ -10,3 +10,6 @@ body{
 .white-text{
     color:white;
 }
+.a, a:hover, a:focus {
+    color: #000000;
+}
