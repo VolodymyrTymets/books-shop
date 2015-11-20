@@ -3,12 +3,13 @@
         <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
         <div class="price">${{price}}</div>
         <figcaption>
-            <h3 class="title" data-action="open-book">{{title}} </h3>
+            <h3 class="title-left" data-action="open-book"> <a data-action="open-author">{{authorName}}</a> : {{title}} </h3>
+
             <p>
                 {{#markdown}}{{description}}{{/markdown}}
             </p>
         {{#if currentUser}}
-                <a href="#" data-action="add-to-cart" >{{_ 'add_to_cart'}}</a>
+                <a class="add-to-cart" href="#" data-action="add-to-cart" >{{_ 'add_to_cart'}}</a>
         {{/if}}
         </figcaption>
     </figure>
