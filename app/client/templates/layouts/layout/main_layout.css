@@ -13,12 +13,11 @@ body{
 .a, a:hover, a:focus {
     color: #000000;
 }
+.container{
+   min-height: 100vh;
+}
 .footer-well{
-    width: 100%;
     background-color: black;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     height: 50px;
     text-align: center;
 }
