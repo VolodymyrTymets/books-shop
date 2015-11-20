@@ -27,6 +27,7 @@ figure.snip1171 * {
 figure.snip1171 img {
     max-width: 100%;
     vertical-align: top;
+    min-height: 305px;
 }
 figure.snip1171 figcaption {
     position: relative;

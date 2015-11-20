@@ -7,16 +7,16 @@ Images = new FS.Collection("images", {
     }
 });
 Images.allow({
-    insert: function () {
-        return AdminPermission();
+    insert: function (userId, obj) {
+        return true;
     },
-    update: function () {
-        return AdminPermission();
+    update: function (userId, obj) {
+        return true;
     },
-    remove: function () {
-        return AdminPermission();
+    remove: function (userId, obj) {
+        return true;
     },
-    download:function(){
+    download:function(userId, obj){
         return true;
     }
 })
