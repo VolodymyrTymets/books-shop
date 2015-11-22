@@ -1,6 +1,14 @@
 <template name="Book">
-   Book
-    {{title}}
-    {{#markdown}}{{description}}{{/markdown}}
-    <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+    <div class="row">
+        <div class="col-md-12 jumbotron">
+            <h1>{{title}}<small>{{authors}}</small></h1>
+            <img  class="img-thumbnail center-block" src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+            {{#markdown}}{{description}}{{/markdown}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 well ">
+             {{>disqus}}
+        </div>
+    </div>
 </template>

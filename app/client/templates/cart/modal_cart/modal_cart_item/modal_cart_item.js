@@ -1,6 +1,9 @@
 Template.ModalCartItem.helpers({
     'title':function (){
-        return Books.findOne({_id:this.bookId}).title;
+        return Books.findOne({_id:this.bookId}) ? Books.findOne({_id:this.bookId}).title :'';
+    },
+    'price': function () {
+        return Books.findOne({_id:this.bookId}) ? Books.findOne({_id:this.bookId}).price :'';
     }
 });
 Template.ModalCartItem.events({

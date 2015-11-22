@@ -1,14 +1,16 @@
 <template name="BookEdit">
-  {{# autoForm collection="Books" doc=this id="book-edit" type="update"}}
-      <fieldset>
-          <legend>{{_ 'book'}}</legend>
-        {{> afQuickField name='title'}}
-        {{> afQuickField name='description'}}
-        {{> afFormGroup name="years"}}
-        {{> afFormGroup name="categoriesId" options=categoriesOpt}}
-        {{> afFormGroup name="authorsId" options=authorsOpt}}
-        {{> afQuickField name='photoId'}}
-          <button type="submit" class="btn btn-primary">{{_ 'submit'}}</button>
-      </fieldset>
-  {{/autoForm}}
+    <div class="well">
+        {{# autoForm collection="Books" doc=this id="book-edit" type="update"}}
+            <fieldset>
+                <legend>{{_ 'book'}}</legend>
+                {{> afQuickField name='title'}}
+                {{> afQuickField name='description'}}
+                {{> afFormGroup name="years"}}
+                {{> afFormGroup name="categoriesId" options=categoriesOpt}}
+                {{> afFormGroup name="authorsId" options=authorsOpt}}
+                {{> afQuickField name='photoId'}}
+                <button type="submit" class="btn btn-primary">{{_ 'submit'}}</button>
+            </fieldset>
+        {{/autoForm}}
+    </div>
 </template>

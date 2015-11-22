@@ -20,6 +20,13 @@ Template.ModalCart.helpers({
     },
     'items': function () {
         return Cart.find();
+    },
+    'totalPrice': function () {
+        var total  =  0;
+        Cart.find().forEach(function (cart) {
+            total +=  Books.findOne({_id: cart.bookId}) ? Books.findOne({_id: cart.bookId}).price : 0;
+        });
+        return total;
     }
 });
 Template.ModalCart.events({

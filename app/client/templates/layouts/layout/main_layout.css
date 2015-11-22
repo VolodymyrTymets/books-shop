@@ -1,0 +1,23 @@
+body{
+    background-color: #212121;
+}
+.navbar{
+    background-color: #30C783 !important ;
+}
+.btn-primary{
+    background-color: #000000 !important ;
+}
+.white-text{
+    color:white;
+}
+.a, a:hover, a:focus {
+    color: #000000;
+}
+.container{
+   min-height: 100vh;
+}
+.footer-well{
+    background-color: #30C783;
+    height: 50px;
+    text-align: center;
+}

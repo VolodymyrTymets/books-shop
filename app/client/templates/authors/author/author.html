@@ -1,7 +1,10 @@
 <template name="Author">
-   Author
-    {{name}}
-    {{surname}}
-    {{#markdown}}{{biography}}{{/markdown}}
-    <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+    <div class="row">
+        <div class="col-md-12 jumbotron">
+            <h1> {{name}}      {{surname}}</h1>
+            <img class="img-thumbnail center-block"  src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+            {{#markdown}}{{biography}}{{/markdown}}
+
+        </div>
+    </div>
 </template>

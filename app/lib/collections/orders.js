@@ -1,14 +1,14 @@
 Orders = new Mongo.Collection('orders');
 
 Orders.allow({
-    insert: function () {
+    insert: function (userId, obj) {
         return true;
     },
-    update: function () {
-        return AdminPermission();
+    update: function (userId, obj) {
+        return AdminPermission(userId);
     },
-    remove: function () {
-        return AdminPermission();
+    remove: function (userId, obj) {
+        return AdminPermission(userId);
     }
 });
 

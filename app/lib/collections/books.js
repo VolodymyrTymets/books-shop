@@ -7,14 +7,14 @@ if(Meteor.isServer) {
 }
 
 Books.allow({
-    insert: function () {
-        return AdminPermission();
+    insert: function (userId, obj) {
+        return AdminPermission(userId);
     },
-    update: function () {
-        return AdminPermission();
+    update: function (userId, obj) {
+        return AdminPermission(userId);
     },
-    remove: function () {
-        return AdminPermission();
+    remove: function (userId, obj) {
+        return AdminPermission(userId);
     }
 });
 

@@ -6,7 +6,16 @@ Template.BookItem.helpers({
     'hasPhoto': function () {
         var imageId  = this.photoId ? this.photoId :'';
         return Images.findOne({ _id: imageId }) ? true  : false;
+    },
+    'authorName': function(){
+        var firstAuthorId = this.authorsId[0];
+        var author  = Authors.findOne({_id:firstAuthorId})
+        return author.name + ' ' + author.surname;
+    },
+    'title': function (){
+        return  this.title.length < 15 ? this.title : this.title.substring(0, 15) + '...' ;
     }
+
 });
 
 Template.BookItem.events({
@@ -24,5 +33,12 @@ Template.BookItem.events({
             sAlert.warning(TAPi18n.__('already_in_cart'));
         }
 
+    },
+    'click [data-action="open-book"]':function (e,tmp) {
+        Router.go('book',{_id:tmp.data._id});
+    },
+    'click [data-action="open-author"]':function (e,tmp) {
+        e.stopPropagation();
+        Router.go('author',{_id:tmp.data.authorsId[0]});
     }
 });

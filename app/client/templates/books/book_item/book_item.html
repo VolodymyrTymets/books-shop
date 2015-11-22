@@ -1,8 +1,19 @@
 <template name="BookItem">
-    <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
-    {{title}}
-    {{#markdown}}{{description}}{{/markdown}}
-    {{#if currentUser}}
-    <button class="btn btn-default" data-action="add-to-cart" >{{_ 'add_to_cart'}} </button>
-    {{/if}}
+    <figure class="snip1171">
+        <div class="item-image-wraper">
+            <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+        </div>
+        <div class="price">${{price}}</div>
+        <figcaption>
+            <h3 class="title-left" data-action="open-book"> <a data-action="open-author">{{authorName}}</a> : {{title}} </h3>
+
+            <p>
+                {{#markdown}}{{description}}{{/markdown}}
+            </p>
+        {{#if currentUser}}
+                <a class="add-to-cart" href="#" data-action="add-to-cart" >{{_ 'add_to_cart'}}</a>
+        {{/if}}
+        </figcaption>
+    </figure>
+
 </template>

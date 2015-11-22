@@ -1,4 +1,8 @@
 <template name="CategoriesList">
-  {{> quickForm collection="Categories" id="category-insert" type="insert"}}
-  {{> reactiveTable settings=settings}}
+    <div class="well">
+        <div class="col-md-6 col-md-offset-3">
+            {{> quickForm collection="Categories" id="category-insert" type="insert"}}
+        </div>
+        {{> reactiveTable settings=settings}}
+    </div>
 </template>
