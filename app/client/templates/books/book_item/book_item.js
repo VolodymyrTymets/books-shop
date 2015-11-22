@@ -11,6 +11,9 @@ Template.BookItem.helpers({
         var firstAuthorId = this.authorsId[0];
         var author  = Authors.findOne({_id:firstAuthorId})
         return author.name + ' ' + author.surname;
+    },
+    'title': function (){
+        return  this.title.length < 15 ? this.title : this.title.substring(0, 15) + '...' ;
     }
 
 });

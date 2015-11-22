@@ -1,6 +1,8 @@
 <template name="BookItem">
     <figure class="snip1171">
-        <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+        <div class="item-image-wraper">
+            <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+        </div>
         <div class="price">${{price}}</div>
         <figcaption>
             <h3 class="title-left" data-action="open-book"> <a data-action="open-author">{{authorName}}</a> : {{title}} </h3>
