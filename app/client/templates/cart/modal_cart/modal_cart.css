@@ -98,3 +98,9 @@
     display: table;
     clear: both;
 }
+.cart-item-holder{
+    max-height: 230px;
+    overflow-y: scroll;
+    border: 2px solid #F1F1F1;
+    background-color: #F1F1F1
+}

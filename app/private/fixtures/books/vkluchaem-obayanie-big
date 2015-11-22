@@ -5,5 +5,6 @@
   "years":{"$date":252460800000},
   "categoriesId":["psychological"],
   "authorsId":["jeck_shaferd"],
+  "price":70,
   "photoId":"vkluchaem-obayanie-big.png"
 }

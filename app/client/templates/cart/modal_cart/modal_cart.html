@@ -9,18 +9,17 @@
             </div>
         </div> <!--end shopping-cart-header -->
         <div class="row">
-            <div class="clo-md-12">
+            <div class="col-md-10 col-md-offset-1">
                 <form class="form-horizontal">
                     <legend>{{_ 'delivery_data'}}</legend>
                     <div class="form-group">
-                        <label for="input-address" class="col-lg-2 control-label">{{_ "delivery_address"}}</label>
-                        <div class="col-lg-10">
+                        <div class="col-md-12">
                             <input type="text" class="form-control" data-name="delivery-address" id="input-address" placeholder="{{_ "delivery_address"}}" value="{{userAddress}}">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="delivery-type"  class="col-lg-2 control-label" >{{_ 'delivery_type'}}</label>
-                        <div class="col-lg-10">
+                        <label for="delivery-type"  class="col-md-6 control-label" >{{_ 'delivery_type'}}</label>
+                        <div class="col-md-6">
                             <select class="form-control"  data-name="delivery-type" id="delivery-type">
                                 {{#each deliveryTypes}}
                                     <option value="{{value}}">{{text}}</option>
@@ -32,7 +31,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="clo-md-12">
+            <div class="clo-md-12 cart-item-holder">
                 <ul class="shopping-cart-items">
                     {{#each items}}
                         <li class="clearfix">

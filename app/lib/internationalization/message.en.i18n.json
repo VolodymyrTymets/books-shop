@@ -3,5 +3,6 @@
   "already_in_cart":"Already in cart",
   "removed_from_cart":"Removed from cart",
   "by_success":"By Success",
-  "cart_empty":"Cart is empty"
+  "cart_empty":"Cart is empty",
+  "cart_delivery_data":"Cart delivery address or delivery type are empty"
 }

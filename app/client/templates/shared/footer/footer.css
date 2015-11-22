@@ -1,0 +1,12 @@
+.footer-well{
+     background-color: #30C783;
+     min-height: 50px;
+ }
+.footer-date{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.footer-brand{
+    text-align: center;
+}

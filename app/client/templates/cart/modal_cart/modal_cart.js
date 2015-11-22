@@ -42,15 +42,20 @@ Template.ModalCart.events({
     },
     'click [data-action="by-now"]':function(e,tmp){
         e.preventDefault();
-        if(Cart.find().count() > 0){
-            Meteor.call('saveOrders',Cart.find().fetch(),function (err,res){
-                if(err){
-                    sAlert.error(err.message);
-                }else{
-                    Cart.remove({});
-                    sAlert.success(TAPi18n.__('by_success'));
-                }
-            })
+        if(Cart.find().count() > 0 ) {
+            if (Meteor.user().profile.deliveryAddress && Meteor.user().profile.deliveryType){
+                Meteor.call('saveOrders', Cart.find().fetch(), function (err, res) {
+                    if (err) {
+                        sAlert.error(err.message);
+                    } else {
+                        Cart.remove({});
+                        sAlert.success(TAPi18n.__('by_success'));
+                    }
+                });
+            }
+            else{
+                sAlert.warning(TAPi18n.__('cart_delivery_data'));
+            }
         }else{
             sAlert.warning(TAPi18n.__('cart_empty'));
         }

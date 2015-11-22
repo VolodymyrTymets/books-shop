@@ -39,6 +39,10 @@
 
   "cart":"Cart",
   "add_to_cart":"Add To Cart",
-  "quantity":"Quantity"
+  "quantity":"Quantity",
+
+  "mail":"Email",
+  "phone":"Phone",
+  "street":"Address"
 
 }
