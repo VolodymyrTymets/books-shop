@@ -1,0 +1,60 @@
+{
+  "schemas": {
+    "category": {
+      "name": {
+        "label": "І'мя",
+        "placeholder": "Введіть Ім'я категорії "
+      }
+    },
+    "author": {
+      "name": {
+        "label": "І'мя",
+        "placeholder": "Введіть Ім'я автора "
+      },
+      "surname": {
+        "label": "Прізвище",
+        "placeholder": "Введіть прізвище автора "
+      },
+      "biography": {
+        "label": "Біографія",
+        "placeholder": "Введіть біографія автора"
+      }
+    },
+    "order": {
+      "address": {
+        "label": "Адреса",
+        "placeholder": "Введіть адресу сюди"
+      },
+      "dateOf": {
+        "label": "Дата заказу",
+        "placeholder": "Введіть дату заказу  сюди"
+      },
+      "typeOfDelivery": {
+        "label": "Тип доставки",
+        "placeholder": "Введіть тип доставки сюди"
+      },
+      "userId": {
+        "label": "Користувач",
+        "placeholder": "Введіть користувача сюди"
+      },
+      "bookId": {
+        "label": "Книга",
+        "placeholder": "Користувач"
+      }
+    },
+    "book": {
+      "title": {
+        "label": "Обложка",
+        "placeholder": "Введіть обложку сюди"
+      },
+      "description": {
+        "label": "Опис",
+        "placeholder": "Введіть опис сюди"
+      },
+      "years": {
+        "label": "Рік",
+        "placeholder": "Введіть рік сюди"
+      }
+    }
+  }
+}

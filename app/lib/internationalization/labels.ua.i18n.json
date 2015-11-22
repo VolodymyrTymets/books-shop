@@ -1,3 +1,47 @@
 {
-  "brand": "магазин"
+  "brand": "Елктронна бібліотека",
+  "submit":"Підтвердити",
+  "remove":"Видалити",
+  "new":"Новий",
+  "add":"Додати",
+  "or":"або",
+  "by":"Овормити заказ",
+  "is_active":"Чи активний",
+  "user":"Користувач",
+
+  "category":"Категорія",
+  "category_name":"Ім'я",
+
+  "book":"Книга",
+  "books":"Книги",
+  "book_title":"Обложка",
+  "book_description":"Опис",
+  "book_years":"Рык",
+
+  "author":"Автор",
+  "authors":"Автори",
+  "author_name":"Ім'я",
+  "author_surname":"Прізвище",
+  "author_biography":"Біографія",
+
+  "order":"Заказ",
+  "order_address":"Адреса",
+  "order_dateOf":"Дата зказу",
+  "order_typeOfDelivery":"Тип доставки",
+  "order_user":"Користувач",
+  "order_book":"Книга",
+
+  "delivery_data":"Дані доставки",
+  "delivery_address":"Адреса доставки",
+  "delivery_type":"Тип доставк",
+  "delivery_type_np":"Нова пошта",
+  "delivery_type_up":"Укрю пошта",
+
+  "cart":"Кошик",
+  "add_to_cart":"У кошик",
+  "quantity":"Кількість",
+
+  "mail":"E-mail",
+  "phone":"Телефон",
+  "street":"Адреса"
 }
