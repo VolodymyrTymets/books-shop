@@ -18,6 +18,7 @@
   "book_description":"Description",
   "book_years":"Year",
 
+  "categories":"Categories",
   "author":"Author",
   "authors":"Authors",
   "author_name":"Name",
@@ -25,6 +26,7 @@
   "author_biography":"Biography",
 
   "order":"Order",
+  "orders":"Orders",
   "order_address":"Address",
   "order_dateOf":"DateOf",
   "order_typeOfDelivery":"Type of Delivery",
