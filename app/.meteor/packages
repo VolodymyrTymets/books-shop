@@ -30,9 +30,7 @@ aldeed:collection2
 aldeed:autoform
 
 #Fixtures
-jss:path
-ostrio:meteor-root
-peerlibrary:fs
+fixtures
 
 #Aurhorization
 accounts-password
@@ -53,3 +51,5 @@ gwendall:autoform-i18n
 
 #STYLE
 fezvrasta:bootstrap-material-design
+
+#TESTINGS

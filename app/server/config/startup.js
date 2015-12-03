@@ -8,7 +8,7 @@ Meteor.startup(function () {
         appId:   Meteor.settings.appIdVk,      // Your app id
         secret:  Meteor.settings.secretVk  // Your app secret
     });
-
+    //Fixtures.init();
     //if(!Meteor.users.findOne()){
     //    Accounts.createUser({
     //        username:'admin',

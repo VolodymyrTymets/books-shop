@@ -1,10 +1,11 @@
 Fixtures =new  function () {
+
     var fillCollection, getAssets, logAction;
+    var ASSETS_PATH = path.join(Meteor.rootPath, 'assets', 'packages', 'fixtures');
 
     var getAssets = function (assetsDir) {
         var assetsPath, files, fullPath;
-        assetsPath = path.join(Meteor.rootPath, 'assets', 'app');
-        fullPath = path.join(assetsPath, assetsDir);
+        fullPath = path.join(ASSETS_PATH, assetsDir);
         try {
             files = fs.readdirSync(fullPath);
         } catch (_error) {
@@ -19,15 +20,14 @@ Fixtures =new  function () {
         });
     };
     var getFiles = function (assetsDir) {
-        var assetsPath, files, fullPath;
-        assetsPath = path.join(Meteor.rootPath, 'assets', 'app');
-        fullPath = path.join(assetsPath, assetsDir);
+        var  files, fullPath;
+        fullPath = path.join(ASSETS_PATH, assetsDir);
         try {
             files = fs.readdirSync(fullPath);
 
         } catch (_error) {
             console.log(_error.message)
-            console.log("Can't load fixtures from directory '" + assetsDir + "'!");
+            console.log("Can't load file from directory '" + assetsDir + "'!");
             return assets;
         }
         return _.map(files, function (fileName) {
@@ -53,22 +53,18 @@ Fixtures =new  function () {
         }
     };
 
-    var logAction = function (assetsNumber, collectionName) {
+    var logAction = function (assetsNumber, collectionName ,assetsDir) {
         var msg;
         if (_.every(arguments, _.identity)) {
-            msg = ["Created " + assetsNumber + " new fixtures", "for the " + collectionName + " collection."];
+            msg = ["-> load [" + assetsNumber + "] ", " item of [" + collectionName + "]" ," from [" + assetsDir + "]"];
             msg = msg.join(' ');
             return console.log(msg);
         }
     };
 
-    this.init = function (cb) {
-
+    this.init = function () {
         var fixturesConfigs, fixturesPath;
-        if (!Meteor.isServer) {
-            return;
-        }
-        fixturesPath = 'fixtures';
+        fixturesPath = 'private';
         fixturesConfigs = path.join(fixturesPath, 'configs.json');
         fixturesConfigs = EJSON.parse(Assets.getText(fixturesConfigs));
         _.each(fixturesConfigs, function(assetsDir, collectionName) {
@@ -80,26 +76,19 @@ Fixtures =new  function () {
             }
             if(collectionName !== 'Images'){
                 assetsDir = path.join(fixturesPath, assetsDir);
-                console.log('assetsDir -> ',assetsDir)
                 assets = getAssets(assetsDir);
                 if (assets.length) {
                     fillCollection(collection, assets);
-                    return logAction(assets.length, collectionName);
+                    return logAction(assets.length, collectionName, assetsDir);
                 }
             }else{
                 assetsDir = path.join(fixturesPath, assetsDir);
-                console.log('assetsDir  [Image]-> ',assetsDir);
                 var  files = getFiles(assetsDir);
                 _.each(files,function (file) {
                     Images.insert(file);
                 });
+                return logAction(files.length, collectionName, assetsDir);
             }
         });
-        if(cb) cb();
     }
 }();
-
-
-Meteor.startup(function() {
-    Fixtures.init();
-});
