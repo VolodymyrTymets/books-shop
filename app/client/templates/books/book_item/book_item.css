@@ -120,3 +120,8 @@ figure.snip1171.hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+figure a:hover,
+figure a:focus {
+    cursor: pointer;
+    color: white;
+}

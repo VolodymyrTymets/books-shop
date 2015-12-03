@@ -1,6 +1,6 @@
 <template name="BookItem">
     <figure class="snip1171">
-        <div class="item-image-wraper">
+        <div class="item-image-wraper" data-action="open-book">
             <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
         </div>
         <div class="price">${{price}}</div>
