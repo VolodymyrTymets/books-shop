@@ -1,0 +1,21 @@
+{
+  "_id" : "testUser",
+  "createdAt" : "2015-12-04T11:49:40.610Z",
+  "services" :  {
+    "password" :  {
+      "bcrypt" : "$2a$10$IVvjSEe18Uo0TMOplGuno.9iOw5VPi8yUraZELzslKvMTYrhLYpRq"
+    },
+    "resume" : {
+      "loginTokens" : [ {
+        "when" : "2015-12-04T11:49:40.619Z",
+        "hashedToken" : "QHTQkIJOLWGgBvTXXaPIeyei9cxE6ZpH+BaZiSb12K4="
+      } ]
+    } },
+  "username" : "testUser",
+  "profile" : {
+    "photo" : null,
+    "name" : null,
+    "deliveryAddress": "test_delivery_data",
+    "deliveryType": "np"
+  }
+}
