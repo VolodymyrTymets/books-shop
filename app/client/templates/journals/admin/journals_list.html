@@ -1,0 +1,21 @@
+<template name="JournalsList">
+  <div class="well">
+      <div class="col-md-6 col-md-offset-3">
+          {{# autoForm collection="Journals" id="journals-insert" type="insert" }}
+              <fieldset>
+                  <legend>{{_ 'journals'}}</legend>
+                  {{> afQuickField name='title'}}
+                  {{> afQuickField name='description'}}
+                  {{> afFormGroup name="years"}}
+                  {{> afQuickField name='price'}}
+                  {{> afFormGroup name="categoriesId" options=categoriesOpt}} <a href="{{pathFor 'categoriesList'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'category'}}</a>
+                  {{> afFormGroup name="authorsId" options=authorsOpt}} <a href="{{pathFor 'categoriesList'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'author'}}</a>
+                  {{> afQuickField name='photoId'}}
+                  <button type="submit" class="btn btn-primary">{{_ 'submit'}}</button>
+              </fieldset>
+          {{/autoForm}}
+       </div>
+
+       {{> reactiveTable settings=settings}}
+  </div>
+</template>

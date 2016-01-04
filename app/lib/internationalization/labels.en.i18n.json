@@ -18,6 +18,12 @@
   "book_description":"Description",
   "book_years":"Year",
 
+  "journal":"Journal",
+  "journals":"Journals",
+  "journal_title":"Title",
+  "journal_description":"Description",
+  "journal_years":"Year",
+
   "categories":"Categories",
   "author":"Author",
   "authors":"Authors",

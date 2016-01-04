@@ -55,6 +55,34 @@
         "label": "Years",
         "placeholder": "Enter a years  here"
       }
+    },
+    "journal": {
+      "title": {
+        "label": "Title",
+        "placeholder": "Enter a Title here"
+      },
+      "description": {
+        "label": "description",
+        "placeholder": "Enter a description of here"
+      },
+      "years": {
+        "label": "Years",
+        "placeholder": "Enter a years  here"
+      }
+    },
+    "publication": {
+      "title": {
+        "label": "Title",
+        "placeholder": "Enter a Title here"
+      },
+      "content": {
+        "label": "content",
+        "placeholder": "Enter a content of here"
+      },
+      "years": {
+        "label": "Years",
+        "placeholder": "Enter a years  here"
+      }
     }
   }
 }

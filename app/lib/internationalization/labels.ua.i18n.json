@@ -17,7 +17,13 @@
   "books":"Книги",
   "book_title":"Обложка",
   "book_description":"Опис",
-  "book_years":"Рык",
+  "book_years":"Рік",
+
+  "journal":"Журнал",
+  "journals":"Журнали",
+  "journal_title":"Назва",
+  "journal_description":"пис",
+  "journal_years":"Рік",
 
   "author":"Автор",
   "authors":"Автори",

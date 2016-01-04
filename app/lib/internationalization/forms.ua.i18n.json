@@ -55,6 +55,34 @@
         "label": "Рік",
         "placeholder": "Введіть рік сюди"
       }
+    },
+    "journal": {
+      "title": {
+        "label": "Назва",
+        "placeholder": "Введіть назву сюди"
+      },
+      "description": {
+        "label": "Опис",
+        "placeholder": "Введіть опис сюди"
+      },
+      "years": {
+        "label": "Рік",
+        "placeholder": "Введіть рік сюди"
+      }
+    },
+    "publication": {
+      "title": {
+        "label": "Назва",
+        "placeholder": "Введіть назва сюди"
+      },
+      "content": {
+        "label": "Вміст",
+        "placeholder": "Введіть вміст сюди"
+      },
+      "years": {
+        "label": "Рік",
+        "placeholder": "Введіть рік сюди"
+      }
     }
   }
 }

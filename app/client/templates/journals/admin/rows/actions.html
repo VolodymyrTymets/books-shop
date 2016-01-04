@@ -1,0 +1,5 @@
+<template name="JournalsRowAction">
+    <a  href="{{pathFor 'journal' _id=this._id}}"  class="mdi-action-visibility"></a>
+    <a  href="{{pathFor 'journal/edit' _id=this._id}}"  class="mdi-content-create"></a>
+    <a  data-action="remove-journals"   class="mdi-action-delete"></a>
+</template>
