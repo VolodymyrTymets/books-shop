@@ -10,14 +10,42 @@
             </button>
         </div>
         <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="{{pathFor 'home'}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{_ 'books'}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{pathFor 'home' }}">{{_ 'all'}}</a></li>
+                        <li role="separator" class="divider"></li>
+                        {{#each categories}}
+                            <li><a href="{{pathFor 'categoryBooks' _categoryId=this._id}}">{{name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="{{pathFor 'home'}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{_ 'journals'}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{pathFor 'journals' }}">{{_ 'all'}}</a></li>
+                        <li role="separator" class="divider"></li>
+                        {{#each categories}}
+                            <li><a href="{{pathFor 'categoryJournals' _categoryId=this._id}}">{{name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="{{pathFor 'home'}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{_ 'publications'}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{pathFor 'publications' }}">{{_ 'all'}}</a></li>
+                        <li role="separator" class="divider"></li>
+                        {{#each categories}}
+                            <li><a href="{{pathFor 'categoryPublications' _categoryId=this._id}}">{{name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
             <form class="navbar-form navbar-left" id="search-form">
                 <input type="text" class="form-control col-lg-8" placeholder="Search">
             </form>
-            <ul class="nav navbar-nav">
-                {{#each categories}}
-                    <li><a href="{{pathFor 'categoryBooks' _categoryId=this._id}}">{{name}}</a></li>
-                {{/each}}
-            </ul>
             {{#if currentUser}}
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#" id="cart" data-action="show-cart"><i class="fa fa-shopping-cart"></i> {{_ 'cart'}} <span class="badge">{{baysCount}}    </span></a></li>

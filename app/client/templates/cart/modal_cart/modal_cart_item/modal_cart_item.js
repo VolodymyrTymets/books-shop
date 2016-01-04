@@ -1,18 +1,17 @@
 Template.ModalCartItem.helpers({
-    'title':function (){
-        return Books.findOne({_id:this.bookId}) ? Books.findOne({_id:this.bookId}).title :'';
-    },
-    'price': function () {
-        return Books.findOne({_id:this.bookId}) ? Books.findOne({_id:this.bookId}).price :'';
+    'item':function (){
+        return  Books.findOne({_id:this.bookId}) ?
+            Books.findOne({_id:this.bookId}) :
+            Journals.findOne({_id:this.bookId});
     },
     'image': function () {
-        var book = Books.findOne({_id:this.bookId});
-        var imageId  =(book && book.photoId) ? book.photoId :'';
+        var item = Books.findOne({_id:this.bookId}) ? Books.findOne({_id:this.bookId}) : Journals.findOne({_id:this.bookId});
+        var imageId  =(item && item.photoId) ? item.photoId :'';
         return Images.findOne({ _id: imageId });
     },
     'hasPhoto': function () {
-        var book = Books.findOne({_id:this.bookId});
-        var imageId  =(book && book.photoId) ? book.photoId :'';
+        var item = Books.findOne({_id:this.bookId}) ? Books.findOne({_id:this.bookId}) : Journals.findOne({_id:this.bookId});
+        var imageId  =(item && item.photoId) ? item.photoId :'';
         return Images.findOne({ _id: imageId }) ? true  : false;
     }
 });

@@ -125,3 +125,54 @@ figure a:focus {
     cursor: pointer;
     color: white;
 }
+figure.snip1171.blue {
+    background-color: #2472a4;
+}
+figure.snip1171.blue h3,
+figure.snip1171.blue a,
+figure.snip1171.blue .price {
+    background-color: #2472a4;
+}
+figure.snip1171.blue .price:before {
+    border-color: transparent #2472a4 transparent;
+}
+figure.snip1171.blue h3:before {
+    border-color: transparent transparent transparent #2472a4;
+}
+figure.snip1171.blue a:before {
+    border-color: transparent transparent #2472a4;
+}
+figure.snip1171.red {
+    background-color: #ab3326;
+}
+figure.snip1171.red h3,
+figure.snip1171.red a,
+figure.snip1171.red .price {
+    background-color: #ab3326;
+}
+figure.snip1171.red .price:before {
+    border-color: transparent #ab3326 transparent;
+}
+figure.snip1171.red h3:before {
+    border-color: transparent transparent transparent #ab3326;
+}
+figure.snip1171.red a:before {
+    border-color: transparent transparent #ab3326;
+}
+figure.snip1171.orange {
+    background-color: #d67118;
+}
+figure.snip1171.orange h3,
+figure.snip1171.orange a,
+figure.snip1171.orange .price {
+    background-color: #d67118;
+}
+figure.snip1171.orange .price:before {
+    border-color: transparent #d67118 transparent;
+}
+figure.snip1171.orange h3:before {
+    border-color: transparent transparent transparent #d67118;
+}
+figure.snip1171.orange a:before {
+    border-color: transparent transparent #d67118;
+}

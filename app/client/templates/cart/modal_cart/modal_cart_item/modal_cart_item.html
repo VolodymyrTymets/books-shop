@@ -1,8 +1,8 @@
 <template name="ModalCartItem">
     <div class="cart-item">
         <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
-        <span class="item-name">{{title}}</span>
-        <span class="item-price">${{price}}</span>
+        <span class="item-name">{{item.title}}</span>
+        <span class="item-price">${{item.price}}</span>
         <span class="item-quantity">{{_ 'Quantity'}}: 01</span>
         <a class="mdi-content-clear item-remove"  data-action="remove-from-cart" > </a>
     </div>

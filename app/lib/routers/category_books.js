@@ -1,5 +1,5 @@
 Router.route('categoryBooks',{
-    path:'/category/:_categoryId',
+    path:'books/category/:_categoryId',
     template:'CategoryBooks',
     controller:BaseController,
     waitOn:function () {

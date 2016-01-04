@@ -24,7 +24,8 @@ Template.ModalCart.helpers({
     'totalPrice': function () {
         var total  =  0;
         Cart.find().forEach(function (cart) {
-            total +=  Books.findOne({_id: cart.bookId}) ? Books.findOne({_id: cart.bookId}).price : 0;
+            var item = Books.findOne({_id:cart.bookId}) ? Books.findOne({_id:cart.bookId}) : Journals.findOne({_id:cart.bookId});
+            total += item ? item.price : 0;
         });
         return total;
     }

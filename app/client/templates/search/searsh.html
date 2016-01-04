@@ -1,7 +1,8 @@
 <template name="SearchResult">
-    Serash result
     {{#if hasResult}}
-      {{ > Books this}}
+        {{ > Books books}}
+        {{ > Journals journals}}
+        {{ > Publications publications}}
     {{else}}
       No result
     {{/if}}
