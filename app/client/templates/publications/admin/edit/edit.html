@@ -1,14 +1,14 @@
-<template name="JournalEdit">
+<template name="PublicationEdit">
     <div class="well">
-        {{# autoForm collection="Journals" doc=this id="journal-edit" type="update"}}
+        {{# autoForm collection="Publications" doc=this id="publicztion-edit" type="update"}}
             <fieldset>
                 <legend>{{_ 'publication'}}</legend>
                 {{> afQuickField name='title'}}
-                {{> afQuickField name='description'}}
+                {{> afQuickField name='content'}}
                 {{> afFormGroup name="years"}}
                 {{> afFormGroup name="categoriesId" options=categoriesOpt}}
                 {{> afFormGroup name="authorsId" options=authorsOpt}}
-                {{> afQuickField name='photoId'}}
+
                 <button type="submit" class="btn btn-primary">{{_ 'submit'}}</button>
             </fieldset>
         {{/autoForm}}

@@ -24,6 +24,12 @@
   "journal_description":"Description",
   "journal_years":"Year",
 
+  "publication":"Publication",
+  "publications":"Publications",
+  "publication_title":"Title",
+  "publication_content":"Content",
+  "publication_years":"Year",
+
   "categories":"Categories",
   "author":"Author",
   "authors":"Authors",

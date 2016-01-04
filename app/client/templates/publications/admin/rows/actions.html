@@ -1,0 +1,5 @@
+<template name="PublicationsRowAction">
+    <a  href="{{pathFor 'publication' _id=this._id}}"  class="mdi-action-visibility"></a>
+    <a  href="{{pathFor 'publication/edit' _id=this._id}}"  class="mdi-content-create"></a>
+    <a  data-action="remove-publication"   class="mdi-action-delete"></a>
+</template>

@@ -25,6 +25,12 @@
   "journal_description":"пис",
   "journal_years":"Рік",
 
+  "publication":"Публікація",
+  "publications":"Публікації",
+  "publication_title":"Назва",
+  "publication_content":"Вміст",
+  "publication_years":"Рік",
+
   "author":"Автор",
   "authors":"Автори",
   "author_name":"Ім'я",
