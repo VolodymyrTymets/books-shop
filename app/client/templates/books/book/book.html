@@ -3,6 +3,14 @@
         <div class="col-md-12 jumbotron">
             <h1>{{title}}<small>{{authors}}</small></h1>
             <img  class="img-thumbnail center-block" src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
+
+            <!-- Pre read button-->
+            <div class="row">
+                <div class="col-md-4 col-md-offset-5">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg">{{_ 'read'}}</button>
+                </div>
+            </div>
+
             {{#markdown}}{{description}}{{/markdown}}
         </div>
     </div>
@@ -11,4 +19,7 @@
              {{>disqus}}
         </div>
     </div>
+    <!-- Pre read modal-->
+     {{> PreReadModal pages}}
+
 </template>

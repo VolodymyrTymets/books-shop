@@ -21,6 +21,15 @@ Schemas.Book = new SimpleSchema({
     years:{
         type: Date
     },
+    pages:{
+        type:Array
+    },
+    'pages.$':{
+        type: String,
+        autoform: {
+            type: "textarea"
+        }
+    },
     authorsId:{
         type: [String],
         autoform: {

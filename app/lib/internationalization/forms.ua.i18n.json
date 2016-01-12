@@ -54,6 +54,10 @@
       "years": {
         "label": "Рік",
         "placeholder": "Введіть рік сюди"
+      },
+      "pages": {
+        "label": "Сторінки",
+        "placeholder": "Введіть сторінки сюди"
       }
     },
     "journal": {

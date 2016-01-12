@@ -6,6 +6,7 @@
                   <legend>{{_ 'book'}}</legend>
                   {{> afQuickField name='title'}}
                   {{> afQuickField name='description'}}
+                  {{> afQuickField name='pages'}}
                   {{> afFormGroup name="years"}}
                   {{> afQuickField name='price'}}
                   {{> afFormGroup name="categoriesId" options=categoriesOpt}} <a href="{{pathFor 'categoriesList'}}">{{_ 'or'}} {{_ 'add'}} {{_ 'new'}} {{_ 'category'}}</a>
