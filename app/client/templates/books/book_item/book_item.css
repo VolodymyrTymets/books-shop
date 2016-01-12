@@ -689,6 +689,16 @@ figcaption#book .description {
     overflow: hidden;
     max-height: 254px;
 }
+figcaption#book .price{
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+figcaption#book .price span{
+    color: white;
+    font-size: larger;
+    background-color: transparent;
+}
 
 /* Media Queries */
 @media screen and (max-width: 37.8125em) {
