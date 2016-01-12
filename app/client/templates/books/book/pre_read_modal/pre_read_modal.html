@@ -8,9 +8,22 @@
                     <h4 class="modal-title" id="myModalLabel">{{_'pre_read_book'}}</h4>
                 </div>
                 <div class="modal-body">
-                    {{#each this}}
-                      {{#markdown}}{{this}}{{/markdown}}
-                    {{/each}}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="book-preread">
+                                <canvas id="pageflip-canvas"></canvas>
+                                <div id="pages">
+                                    {{#each this}}
+                                        <section>
+                                            <div>
+                                              {{#markdown}}{{this}}{{/markdown}}
+                                            </div>
+                                        </section>
+                                    {{/each}}
+                                </div>
+                            </div>
+                         </div>
+                    </div>
                 </div>
             </div>
         </div>
