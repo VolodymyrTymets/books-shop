@@ -1,15 +1,10 @@
 <template name="PublicationItem">
-    <figure class="snip1171 ">
-        <div class="publication-item-image-wraper" data-action="open">
-            <img src="/images/publication.png">
-        </div>
-        <figcaption>
-            <h3 class="title-left" data-action="open"> <a data-action="open-author">{{authorName}}</a> : {{title}} </h3>
 
-            <p>
-                {{#markdown}}{{content}}{{/markdown}}
-            </p>
-        </figcaption>
-    </figure>
-
+<div class="col-md-6">
+    <article contenteditable>
+        <h1 data-action="open">{{title}}</h1>
+        <h4  data-action="open-author" >{{authorName}}</h4>
+        <p class="description">{{#markdown}}{{content}}{{/markdown}}</p>
+    </article>
+</div>
 </template>
