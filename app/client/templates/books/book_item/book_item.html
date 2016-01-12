@@ -1,19 +1,51 @@
 <template name="BookItem">
-    <figure class="snip1171">
-        <div class="item-image-wraper" data-action="open-book">
-            <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
-        </div>
-        <div class="price">${{price}}</div>
-        <figcaption>
-            <h3 class="title-left" data-action="open-book"> <a data-action="open-author">{{authorName}}</a> : {{title}} </h3>
 
-            <p>
-                {{#markdown}}{{description}}{{/markdown}}
-            </p>
-        {{#if currentUser}}
-                <a class="add-to-cart" href="#" data-action="add-to-cart" >{{_ 'add_to_cart'}}</a>
-        {{/if}}
-        </figcaption>
-    </figure>
 
+<div class="col-md-6">
+
+
+    <div class="component">
+        <ul class="align">
+            <!-- Book  -->
+            <li>
+                <figure class='book'>
+                    <!-- Front -->
+                    <ul class='hardcover_front'>
+                        <li>
+                            <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}" alt="" width="100%" height="100%">
+                            <span class="ribbon bestseller">Nº1</span>
+                        </li>
+                        <li></li>
+                    </ul>
+                    <!-- Pages -->
+                    <ul class='page'>
+                        <li></li>
+                        <li>
+                            {{#if currentUser}}
+                                <a class="btn-by" href="#" data-action="add-to-cart" >{{_ 'add_to_cart'}}</a>
+                            {{/if}}
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!-- Back -->
+                    <ul class='hardcover_back'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='book_spine'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <figcaption id="book">
+                        <h1 data-action="open-book" >{{title}}</h1>
+                        <span data-action="open-author">{{authorName}}</span>
+                        <div class="description">{{#markdown}}{{description}}{{/markdown}}</div>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+</div>
 </template>
