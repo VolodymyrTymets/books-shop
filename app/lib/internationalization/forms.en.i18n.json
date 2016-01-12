@@ -54,6 +54,10 @@
       "years": {
         "label": "Years",
         "placeholder": "Enter a years  here"
+      },
+      "pages": {
+        "label": "Pages",
+        "placeholder": "Enter a Pages  here"
       }
     },
     "journal": {

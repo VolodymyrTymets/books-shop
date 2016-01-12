@@ -9,6 +9,8 @@
   "is_active":"Is active",
   "user":"User",
   "all":"All",
+  "pre_read_book":"Book pre reading",
+  "read":"Read",
 
   "category":"Category",
   "category_name":"Name",
