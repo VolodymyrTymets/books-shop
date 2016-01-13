@@ -2,8 +2,6 @@
 
 
 <div class="col-md-6">
-
-
     <div class="component">
         <ul class="align">
             <!-- Book  -->
@@ -13,7 +11,9 @@
                     <ul class='hardcover_front'>
                         <li>
                             <img src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}" alt="" width="100%" height="100%">
-                            <span class="ribbon bestseller">Nº1</span>
+                            {{#if top}}
+                                <span class="ribbon bestseller">TOP</span>
+                            {{/if}}
                         </li>
                         <li></li>
                     </ul>
@@ -41,12 +41,18 @@
                     <figcaption id="book">
                         <div class="price"><span class="label label-info">${{price}}</span></div>
                         <h1 data-action="open-book" >{{title}}</h1>
-                        <span data-action="open-author">{{authorName}}</span>
+                        <a data-action="open-author">{{authorName}}</a>
                         <div class="description">{{#markdown}}{{description}}{{/markdown}}</div>
+
                     </figcaption>
+
                 </figure>
             </li>
         </ul>
     </div>
+    <div class="col-md-offset-3 book-rating">
+    {{> starsRating rating=bookRating size=20}}
+    </div>
 </div>
+
 </template>

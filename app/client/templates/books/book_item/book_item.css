@@ -677,7 +677,7 @@ figcaption#book h1 {
     color: rgb(207, 188, 58);
 }
 
-figcaption#book span {
+figcaption#book a {
     color: #16a085;
     padding: 0.6em 0 1em 0;
     display: block;
@@ -722,4 +722,9 @@ figcaption#book .price span{
         left: -80px;
         font-size: 90%;
     }
+}
+
+.book-rating{
+    position: absolute;
+    margin-top: -75px;
 }

@@ -2,6 +2,12 @@
     <div class="row">
         <div class="col-md-12 jumbotron">
             <h1>{{title}}<small>{{authors}}</small></h1>
+
+            <!-- Book rating-->
+            {{#if currentUser}}
+                {{> starsRating   id='rating' rating=userRating size=30  mutable=true}}
+            {{/if}}
+
             <img  class="img-thumbnail center-block" src="{{#if hasPhoto}}{{image.url store='images'}}{{else}}/images/no-image.png{{/if}}">
 
             <!-- Pre read button-->

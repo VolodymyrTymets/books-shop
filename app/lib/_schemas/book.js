@@ -43,6 +43,19 @@ Schemas.Book = new SimpleSchema({
     price:{
         type: Number
     },
+    rating:{
+        type:[Object],
+        autoform: {
+            type: "hidden",
+            label: false
+        }
+    },
+    'rating.$.userId':{
+        type: String
+    },
+    'rating.$.value':{
+        type: Number
+    },
     photoId:{
         type: String,
         autoform: {

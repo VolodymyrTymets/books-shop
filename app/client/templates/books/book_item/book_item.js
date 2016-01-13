@@ -14,6 +14,22 @@ Template.BookItem.helpers({
     },
     'title': function (){
         return  this.title.length < 15 ? this.title : this.title.substring(0, 15) + '...' ;
+    },
+    'bookRating':function() {
+        var calc = _.max(_.groupBy(this.rating,'value'),function(item){return item.length });
+        var res = 1.1;
+        if(Array.isArray(calc)){
+            res = calc.length ? calc[0].value : calc.value
+        }
+        return res;
+    },
+    'top':function () {
+        var calc = _.max(_.groupBy(this.rating,'value'),function(item){return item.length });
+        var res = 1.1;
+        if(Array.isArray(calc)){
+            res = calc.length ? calc[0].value : calc.value
+        }
+        return res >= 3;
     }
 
 });
