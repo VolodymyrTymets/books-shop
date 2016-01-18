@@ -2,6 +2,7 @@
   "Categories": "categories",
   "Authors": "authors",
   "Books": "books",
+  "Journals":"journals",
   "Meteor.users":"users",
   "Images":"images"
 }
