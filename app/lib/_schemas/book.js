@@ -22,7 +22,8 @@ Schemas.Book = new SimpleSchema({
         type: Date
     },
     pages:{
-        type:Array
+        type:Array,
+        optional:true
     },
     'pages.$':{
         type: String,
@@ -48,7 +49,8 @@ Schemas.Book = new SimpleSchema({
         autoform: {
             type: "hidden",
             label: false
-        }
+        },
+        optional:true
     },
     'rating.$.userId':{
         type: String
