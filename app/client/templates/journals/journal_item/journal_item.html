@@ -12,7 +12,9 @@
                                 <span class="ribbon bestseller">Nº1</span>
                             </li>
                             <li>
-                                <a class="btn-by" href="#" data-action="add-to-cart" >{{_ 'add_to_cart'}}</a>
+                                {{#if currentUser}}
+                                     <a class="btn-by" href="#" data-action="add-to-cart" >{{_ 'add_to_cart'}}</a>
+                                {{/if}}
                             </li>
                         </ul>
 

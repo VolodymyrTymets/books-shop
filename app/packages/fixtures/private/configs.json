@@ -3,6 +3,7 @@
   "Authors": "authors",
   "Books": "books",
   "Journals":"journals",
+  "Publications":"publications",
   "Meteor.users":"users",
   "Images":"images"
 }

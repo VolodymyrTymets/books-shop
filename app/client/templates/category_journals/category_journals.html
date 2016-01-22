@@ -1,8 +1,8 @@
 <template name="CategoryJournals">
-    <h1 class="white-text">{{categoryName}}</h1>
+    <h1 class="white-text">{{_ 'journals'}}: {{categoryName}}</h1>
     {{#if hasResult}}
       {{ > Journals this}}
     {{else}}
-        No result
+        <p class="white-text">{{_ 'no_result'}} :(</p>
     {{/if}}
 </template>
