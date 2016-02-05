@@ -1,5 +1,5 @@
 {
-  "brand": "Books Shop",
+  "brand": "Digital Library",
   "submit":"Submit",
   "remove":"Remove",
   "new":"new",
@@ -59,6 +59,8 @@
 
   "mail":"Email",
   "phone":"Phone",
-  "street":"Address"
+  "street":"Address",
+  "footer_contacts":"Our contacts",
+  "footer_logo":"Digital Library - the best books and more..."
 
 }

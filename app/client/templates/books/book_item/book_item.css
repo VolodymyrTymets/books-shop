@@ -687,12 +687,12 @@ figcaption#book .description {
     color: white;
     line-height: 1.3;
     overflow: hidden;
-    max-height: 254px;
+    max-height: 208px;
 }
 figcaption#book .price{
     position: absolute;
-    top: 0;
-    right: 5%;
+    top: -5px;
+    right: 0%;
 }
 figcaption#book .price span{
     color: white;

@@ -4,7 +4,7 @@
     <article contenteditable>
         <h1 data-action="open">{{title}}</h1>
         <h4  data-action="open-author" >{{authorName}}</h4>
-        <p class="description">{{#markdown}}{{content}}{{/markdown}}</p>
+        <p class="description">{{#markdown}}{{cut content 200}}{{/markdown}}</p>
     </article>
 </div>
 </template>

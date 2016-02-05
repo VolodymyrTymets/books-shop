@@ -1,6 +1,7 @@
 .footer-well{
      background-color: #30C783;
      min-height: 50px;
+     color: white;
  }
 .footer-date{
     text-align: center;
@@ -9,4 +10,20 @@
 }
 .footer-brand{
     text-align: center;
+}
+.footer-logo {
+    padding-left: 50px;
+    padding-top: 30px;
+
+}
+.footer-contacts {
+    padding-top: 30px;
+}
+.footer-contacts ul {
+    list-style-type: square;
+
+}
+.footer-contacts ul li {
+    padding:5px;
+
 }
